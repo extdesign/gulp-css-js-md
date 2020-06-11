@@ -1,0 +1,16 @@
+@import "node_modules/breakpoint-sass/stylesheets/breakpoint";
+
+body {
+    font-size: 16px;
+    line-height: 1.4;
+    
+    background-color: #fff;
+}
+
+p {
+    font-size: 1.2em;
+    
+    @include breakpoint(max-width 1080px) {
+        font-size: .8em;
+    }
+}

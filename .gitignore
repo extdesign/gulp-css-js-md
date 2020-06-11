@@ -1,0 +1,20 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea
+*.sublime*
+.vscode
+
+# Help, Logs, Vendors
+*.log*
+node_modules/
+package-lock.json
+
+# Examples builds
+examples/**/*.css
+examples/**/*.css.map
+examples/**/*.min.js
+examples/**/*.min.js.map
+examples/**/*.html

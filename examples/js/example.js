@@ -1,0 +1,1 @@
+function setTextToExampleDiv(){document.getElementById("example").innerHTML="Example"}setTextToExampleDiv();
