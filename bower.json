@@ -1,0 +1,16 @@
+{
+  "name": "gulp-css-js-md",
+  "homepage": "https://github.com/extdesign/profhairs.ru",
+  "authors": [
+    "Sergey Teterlev <sergey.teterlev@gmail.com>"
+  ],
+  "description": "For Gulp use Susy",
+  "main": "gulpfile.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ]
+}
