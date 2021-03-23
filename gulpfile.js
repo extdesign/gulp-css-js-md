@@ -96,10 +96,8 @@ function md2html() {
           xhtml: true
       }))
       .pipe(dest(function (file) {
-            console.log(file)
-            return file.base + './';
-        }
-      ))
+        return file.base;
+      }));
 }
 
 exports.scss = scss2css;
