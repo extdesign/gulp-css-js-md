@@ -12,8 +12,8 @@ const plumber = require('gulp-plumber'); // отлавливает ошибки 
 // for SASS
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer'); // префиксы
-const cleanCSS = require('gulp-clean-css'); // minify css
-const csso = require('gulp-csso');
+//const cleanCSS = require('gulp-clean-css'); // minify css
+//const csso = require('gulp-csso');
 const cssnano = require('gulp-cssnano');
 
 // for JS
@@ -97,7 +97,7 @@ function md2html() {
       }))
       .pipe(dest(function (file) {
             console.log(file)
-            return file.base + './../.template';
+            return file.base + './';
         }
       ))
 }

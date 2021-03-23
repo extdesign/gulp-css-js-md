@@ -277,6 +277,7 @@ fabric.properties
 .idea/
 *.log*
 package-lock.json
+bower_components/
 
 # Examples builds
 examples/**/*.css
