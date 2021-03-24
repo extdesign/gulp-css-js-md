@@ -11,10 +11,7 @@ const plumber = require('gulp-plumber'); // отлавливает ошибки 
 
 // for SASS
 const sass = require('gulp-sass');
-const autoprefixer = require('gulp-autoprefixer'); // префиксы
-//const cleanCSS = require('gulp-clean-css'); // minify css
-//const csso = require('gulp-csso');
-const cssnano = require('gulp-cssnano');
+const postcss = require('gulp-postcss');
 
 // for JS
 const babel = require('gulp-babel');
@@ -53,9 +50,7 @@ function scss2css() {
           outputStyle: 'compressed', // expanded or compressed
           includePaths: ['node_modules/susy/sass']
       })).on('error', onError)
-      .pipe(autoprefixer('last 2 version'))
-      //.pipe(cleanCSS({level: 2}))
-      .pipe(cssnano())
+      .pipe(postcss())
       .pipe(sourcemaps.write('.'))
       .pipe(dest(function (file) {
           return file.base;
