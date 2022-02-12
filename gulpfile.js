@@ -27,7 +27,7 @@ const path = {
       './examples/**/*.scss',
     ],
     js: [
-      './examples/**/*.js',
+      './examples/**/!(*.min)*.js',
     ],
     md: [
       './examples/**/*.md',

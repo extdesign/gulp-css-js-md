@@ -66,8 +66,8 @@
 1. Если не установлен `Node.js`, что можно проверить командой `node -v`, то переходим на сайт [https://nodejs.org/en/](https://nodejs.org/en/), скачиваем и устанавливаем. Проверялось на версии `v12.18.0`;
 2. Установить `npm` не ниже версии `7.6.3`;
 3. Установить [https://bower.io/](bower) - `sudo npm install -g bower` - не ниже версии `1.8.12`;
-4. Скопировать файлы `gulpfile.js`, `package.json`, `bower.json`, `postcss.config.js` в корень проекта;
-5. Исключить файлы `gulpfile.js`, `package.json`, `bower.json`, `postcss.config.js`, `node_modules/` и `bower_components/` в `.gitignore`;
+4. Скопировать файлы `gulpfile.js`, `.babelrc`, `package.json`, `bower.json`, `postcss.config.js` в корень проекта;
+5. Исключить файлы `gulpfile.js`, `.babelrc`, `package.json`, `bower.json`, `postcss.config.js`, `node_modules/` и `bower_components/` в `.gitignore`;
 6. Выполнить в папке проекта, в терминале команду `npm install` для установки зависимостей;
 7. Установить пакет Susy `bower install susy`;
 8. Запускать вручную задачи `gulp css`, `gulp md` или `gulp js` в терминале. Удобнее использовать встроенные возможности IDE и запускать прямо из среды разработки. Например, для JetBrains Phpstorm есть дополнительное окошко `Gulp Tasks`.
